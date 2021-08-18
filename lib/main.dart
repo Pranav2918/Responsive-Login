@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_app/homepage.dart';
 import 'package:responsive_app/login.dart';
+import 'package:responsive_app/responsivecheck.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,7 +24,11 @@ class MyApp extends StatelessWidget {
           ),
         ),
         initialRoute: '/',
-        routes: {'/': (context) => HomePage(), '/login': (context) => Login()},
+        routes: {
+          '/': (context) => HomePage(),
+          '/login': (context) => Login(),
+          '/responsivecheck': (BuildContext context) => ResponsiveCheck()
+        },
         debugShowCheckedModeBanner: false,
       ),
       designSize: const Size(412, 846),

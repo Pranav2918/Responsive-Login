@@ -33,7 +33,7 @@ class Login extends StatelessWidget {
                     SizedBox(width: 4.w),
                     GestureDetector(
                       onTap: () => Navigator.pop(context),
-                      child: Text('No Account?',
+                      child: Text('Sign Up?',
                           style: TextStyle(
                               fontSize: 14.sp,
                               color: purpleColor,
